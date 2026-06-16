@@ -17,11 +17,11 @@ continuousFeeCredit can exceed withdrawable, blocking fee claims
 - claimContinuousFee debits withdrawable, reverts if credit > withdrawable
 - PoC: test/PocFinding05FeeBlock.sol [PASS] 3 tests
 
-### #218 — New Informational
+### #218 New Informational
 Referral fee under-budgeting in repayAndWithdrawCollateral
 - referralFeeAssets computed from post-fee units, causing under-budget
 
-### #2816 — Duplicate Medium (submitted Jun 10)
+### #2816 Duplicate Medium (submitted Jun 10)
 liquidate() seizedAssets branch allows free collateral seizure at price==0
 - Certora Reverts.spec covers repaidUnits path but NOT seizedAssets path
 - PoC: test/PocFinding07ZeroPriceSeizure.sol [PASS] 3 tests
