@@ -5,13 +5,13 @@ Prize Pool: $400K | Status: Judging
 
 ## Findings Submitted (4 total)
 
-### #188 — Duplicate High (CONFIRMED)
+### #188 Duplicate High (CONFIRMED)
 Post-maturity seizedAssets liquidation underflows on bad debt positions
 - liquidate() post-maturity: repaidUnits > _position.debt causes underflow
 - Panic(0x11) instead of descriptive revert
 - PoC: test/PocFinding01.sol [PASS] 3 tests
 
-### #219 — Duplicate Medium (CONFIRMED)
+### #219 Duplicate Medium (CONFIRMED)
 continuousFeeCredit can exceed withdrawable, blocking fee claims
 - _updatePosition accrues fees without token movement
 - claimContinuousFee debits withdrawable, reverts if credit > withdrawable
